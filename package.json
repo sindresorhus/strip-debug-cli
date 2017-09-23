@@ -1,0 +1,52 @@
+{
+	"name": "strip-debug-cli",
+	"version": "0.0.0",
+	"description": "Strip console, alert, and debugger statements from JavaScript code",
+	"license": "MIT",
+	"repository": "sindresorhus/strip-debug-cli",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"bin": {
+		"strip-debug": "cli.js"
+	},
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava"
+	},
+	"files": [
+		"cli.js"
+	],
+	"keywords": [
+		"cli-app",
+		"cli",
+		"strip",
+		"remove",
+		"delete",
+		"clean",
+		"debug",
+		"debugger",
+		"console",
+		"log",
+		"logging",
+		"js",
+		"javascript",
+		"ast",
+		"esprima"
+	],
+	"dependencies": {
+		"get-stdin": "^5.0.1",
+		"meow": "^3.7.0",
+		"strip-debug": "^2.0.0"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"execa": "^0.8.0",
+		"temp-write": "^3.3.0",
+		"xo": "*"
+	}
+}
