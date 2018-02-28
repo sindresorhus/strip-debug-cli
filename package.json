@@ -40,12 +40,12 @@
 	],
 	"dependencies": {
 		"get-stdin": "^5.0.1",
-		"meow": "^3.7.0",
-		"strip-debug": "^2.0.0"
+		"meow": "^4.0.0",
+		"strip-debug": "^3.0.0"
 	},
 	"devDependencies": {
 		"ava": "*",
-		"execa": "^0.8.0",
+		"execa": "^0.9.0",
 		"temp-write": "^3.3.0",
 		"xo": "*"
 	}
