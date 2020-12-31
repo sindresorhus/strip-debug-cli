@@ -1,4 +1,4 @@
-# strip-debug-cli [![Build Status](https://travis-ci.org/sindresorhus/strip-debug-cli.svg?branch=master)](https://travis-ci.org/sindresorhus/strip-debug-cli)
+# strip-debug-cli
 
 > Strip `console`, `alert`, and `debugger` statements from JavaScript code
 
