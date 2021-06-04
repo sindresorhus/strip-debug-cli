@@ -4,13 +4,11 @@
 
 Useful for making sure you didn't leave any logging in production code.
 
-
 ## Install
 
 ```
 $ npm install --global strip-debug-cli
 ```
-
 
 ## Usage
 
@@ -26,12 +24,6 @@ $ strip-debug --help
     $ cat src/app.js | strip-debug > dist/app.js
 ```
 
-
 ## Related
 
 - [strip-debug](https://github.com/sindresorhus/strip-debug) - API for this module
-
-
-## License
-
-MIT © [Sindre Sorhus](https://sindresorhus.com)
