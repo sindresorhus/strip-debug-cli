@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+import process from 'node:process';
 import fs from 'node:fs';
 import getStdin from 'get-stdin';
 import meow from 'meow';
@@ -14,7 +15,7 @@ const cli = meow(`
 	  $ strip-debug src/app.js > dist/app.js
 	  $ cat src/app.js | strip-debug > dist/app.js
 `, {
-	importMeta: import.meta
+	importMeta: import.meta,
 });
 
 const input = cli.input[0];
@@ -29,8 +30,6 @@ const transform = code => transformSync(code, {plugins: [stripDebug]}).code;
 if (input) {
 	process.stdout.write(transform(fs.readFileSync(cli.input[0], 'utf8')));
 } else {
-	(async () => {
-		const code = transform(await getStdin());
-		process.stdout.write(code);
-	})();
+	const code = transform(await getStdin());
+	process.stdout.write(code);
 }

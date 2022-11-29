@@ -1,5 +1,5 @@
 import test from 'ava';
-import execa from 'execa';
+import {execa} from 'execa';
 import tempWrite from 'temp-write';
 
 const fixture = 'const foo = () => { return 1; console.log(\'Yo\') };';

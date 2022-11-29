@@ -6,8 +6,8 @@ Useful for making sure you didn't leave any logging in production code.
 
 ## Install
 
-```
-$ npm install --global strip-debug-cli
+```sh
+npm install --global strip-debug-cli
 ```
 
 ## Usage
